@@ -15,8 +15,6 @@ order_products <- fread(paste0(workpath,'/input/order_products__train.csv'))
 order_products_prior <- fread(paste0(workpath,'/input/order_products__prior.csv'))
 aisles <- fread(paste0(workpath,'/input/aisles.csv'))
 departments <- fread(paste0(workpath,'/input/departments.csv'))
-
-
 ## ----include=FALSE-------------------------------------------------------
 options(tibble.width = Inf)
 
@@ -38,6 +36,7 @@ glimpse(order_products_prior)
 
 ## ---- result='asis'------------------------------------------------------
 kable(head(aisles,10))
+head(aisles)
 glimpse(aisles)
 
 ## ---- result='asis'------------------------------------------------------
